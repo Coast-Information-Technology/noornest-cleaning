@@ -21,6 +21,16 @@ function toggleDropdown(event) {
   }
 }
 
+document.querySelectorAll('.dropdown > a').forEach(link => {
+  link.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      toggleDropdown(e);
+    }
+  });
+});
+
+
 const tab = () => {
   const tabBtns = document.querySelectorAll(".tab-btn");
   const contentsCards = document.querySelectorAll(".price-cards");
