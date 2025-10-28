@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <title>Noornest | Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-nav">
+        <a href="./index.html" class="logo">
+          <img src="./images/logo.png" alt="logo" />
+        </a>
+
+        <nav role="navigation">
+          <ul class="nav-links" role="list">
+            <li class="active" role="listitem">
+              <a href="./index.html">Home</a>
+            </li>
+
+            <li role="listitem">
+              <a href="./aboutus.html">About Us</a>
+            </li>
+
+            <li
+              role="listitem"
+              class="dropdown"
+              onclick="toggleDropdown(event)">
+              <a href="#">Services<i class="fa-solid fa-chevron-down"></i></a>
+
+              <ul role="list" class="dropdown-content">
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./services.html">Our Services</a>
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./residential.html">Residential Cleaning</a>
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./industrial.html">Industrial Cleaning</a>
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./commercial.html">Commercial Cleaning</a>
+                </li>
+              </ul>
+            </li>
+            <li role="listitem">
+              <a class="active" href="./contact.html">Contact Us</a>
+            </li>
+
+            <li role="listitem">
+              <a href="./career.html">Career</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="cta-menu">
+        <ul role="list" class="cta-header">
+          <li class="cta1" role="listitem"><a href="#">Book</a></li>
+          <li class="cta2" role="listitem"><a href="#">Quote</a></li>
+        </ul>
+        <div onclick="toggleMenu()" class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="commercial-hero contact">
+      <div class="commercial-hero-text">
+        <h1>Contact our cleaning team</h1>
+        <p>
+          Get a quick quote or ask us anything. We respond fast and aim to solve
+          your cleaning needs the same day
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-us">
+      <div class="contact-container">
+        <div class="contact-us-heading">
+          <p>Connect</p>
+          <h2>Contact us</h2>
+          <p>
+            Reach out through phone, email, or WhatsApp. We're ready to help you
+            clean.
+          </p>
+        </div>
+        <div class="contact-link">
+          <div class="contact-div">
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <span
+              ><h3>Email</h3>
+              <a href="mailto:hello@noornestcleaning.co.uk"
+                >hello@noornestcleaning.co.uk</a
+              ></span
+            >
+          </div>
+          <div class="contact-div">
+            <span><i class="fa-solid fa-phone"></i></span>
+            <span
+              ><h3>Phone</h3>
+              <a href="tel:+44 (0)XXXX XXX XXX">+44 (0)XXXX XXX XXX</a></span
+            >
+          </div>
+          <div class="contact-div">
+            <span><i class="fa-solid fa-clock"></i></span>
+            <span
+              ><h3>Hours</h3>
+              <p>Monday to Saturday, 08:00-18:00</p></span
+            >
+          </div>
+        </div>
+      </div>
+      <img src="./images/Placeholder Image.png" alt="cleaners" />
+    </section>
+
+    <section class="send-details">
+      <div class="request">
+        <p>Request</p>
+        <h2>Send us your details</h2>
+        <p>Fill out the form below and we'll get back to you quickly</p>
+        <ul class="contact-link">
+          <li><i class="fa-solid fa-envelope"></i>
+            <a href="mailto:email@example.com"
+              >email@example.com</a
+            >
+          </li>
+          <li><i class="fa-solid fa-phone"></i>
+            <a href="tel:+1(555)0000000"
+              >+1 (555) 000-0000</a
+            >
+          </li>
+          <li><i class="fa-solid fa-location-dot"></i> 
+            <a href="#"
+              >123 Sample St, Sydney
+              NSW 2000 AU</a
+            >
+          </li>
+        </ul>
+      </div>
+      <form>
+        <span class="input-span">
+          <label for="firstName"
+            >First Name
+            <input type="text" id="firstName" class="contact-box" />
+          </label>
+
+          <label for="lastName"
+            >Last Name
+            <input type="text" id="lastName" class="contact-box" />
+          </label>
+
+          <label for="email"
+            >Email
+            <input type="email" id="email" class="contact-box" />
+          </label>
+
+          <label for="phoneNumber"
+            >Phone Number
+            <input type="tel" id="phoneNumber" class="contact-box" />
+          </label>
+        </span>
+
+        <label for="service"
+          >Select service type
+          <select name="service" id="service" class="contact-box">
+            <option>select one...</option>
+            <option value="Commercial cleaning">Commercial cleaning</option>
+            <option value="Industrial cleaning">Industrial cleaning</option>
+            <option value="Residential cleaning">Residential cleaning</option>
+          </select>
+        </label>
+
+        <span class="radio-span">
+          <p class="radio-label">What describes your cleaning needs?</p>
+          <span>
+          <label for="homeCleaning">
+            <input type="radio" name="cleaning-needs" id="homeCleaning" />Home
+            cleaning</label
+          >
+          <label for="officeCleaning">
+            <input
+              type="radio"
+              name="cleaning-needs"
+              id="officeCleaning" />Office cleaning
+          </label>
+          <label for="deepClean">
+            <input type="radio" name="cleaning-needs" id="deepClean" />Deep
+            clean</label
+          >
+          <label for="endOfTenancy">
+            <input type="radio" name="cleaning-needs" id="endOfTenancy" />End of
+            tenancy
+          </label>
+          <label for="commercialSpace">
+            <input
+              type="radio"
+              name="cleaning-needs"
+              id="commercialSpace" />Commercial space
+          </label>
+          <label for="other"> 
+            <input type="radio" name="cleaning-needs" id="other" />Other
+          </label>
+          </span>
+        </span>
+
+        <label for="message">
+          Message
+          <textarea name="message" id="message">
+            Tell us about your cleaning requirements
+        </textarea
+          >
+        </label>
+
+        <label for="terms">
+          <input type="checkbox" name="terms and conditions" id="terms" />I
+          accept the terms and conditions
+        </label>
+
+       <div class="submit">
+         <button id="submitBtn" type="submit">Submit</button>
+       </div>
+      </form>
+    </section>
+
+    <section class="book-quickly">
+      <div>
+        <h2>Book quickly with WhatsApp</h2>
+        <p>
+          Instant booking for your convenience. Message us directly through
+          WhatsApp.
+        </p>
+        <ul role="list" class="whatsapp-cta">
+          <li class="whatsapp-cta1" role="listitem"><a href="#">WhatsApp</a></li>
+          <li class="whatsapp-cta2" role="listitem">
+            <a href="#">Message<i class="fa-solid fa-chevron-right"></i></a>
+          </li>
+        </ul>
+      </div>
+      <img src="./images/cleaners img.jpg" alt="whatsapp" />
+    </section>
+
+    <section class="locations">
+      <div class="location-heading">
+        <p>Areas</p>
+        <h2>Locations</h2>
+        <p>We serve key areas across the United Kingdom</p>
+      </div>
+      <div class="location-cards">
+        <div class="location-card reach">
+          <img src="./images/Placeholder Image4.png" alt="london" />
+          <h3>London</h3>
+          <p>Central hub for our comprehensive cleaning services</p>
+          <div class="mini-cta areas">
+            <a href="#"
+              >Explore our coverage <i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="location-card reach">
+          <img src="./images/Placeholder Image5.png" alt="manchester" />
+          <h3>Greater Manchester</h3>
+          <p>Extending our professional cleaning across Greater Manchester</p>
+          <div class="mini-cta areas">
+            <a href="#"
+              >View service map <i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faqs commercial contact">
+      <div class="faq-header">
+        <h2>FAQs</h2>
+        <p>
+          Clear answers to help you understand our cleaning service process and
+          expectations.
+        </p>
+      </div>
+      <div class="faq-cards">
+        <div class="faq-card">
+          <span><i class="fa-solid fa-broom"></i></span>
+          <h3>Booking timeline</h3>
+          <p>
+            Most requests are confirmed within 24 hours, with flexible
+            scheduling options.
+          </p>
+        </div>
+        <div class="faq-card">
+          <span><i class="fa-solid fa-broom"></i></span>
+          <h3>Cleaning equipment</h3>
+          <p>
+            We bring professional grade supplies, but can also use your
+            preferred products.
+          </p>
+        </div>
+        <div class="faq-card">
+          <span><i class="fa-solid fa-broom"></i></span>
+          <h3>Changing appointments</h3>
+          <p>
+            Reschedule with at least 24 hours' notice for minimal disruption
+          </p>
+        </div>
+        <div class="faq-card">
+          <span><i class="fa-solid fa-broom"></i></span>
+          <h3>Parking considerations</h3>
+          <p>
+            Actual parking costs will be transparently communicated before your
+            service.
+          </p>
+        </div>
+        <div class="faq-card">
+          <span><i class="fa-solid fa-broom"></i></span>
+          <h3>Payment methods</h3>
+          <p>
+            We accept bank transfers, card payments, and provide flexible
+            payment solutions
+          </p>
+        </div>
+        <div class="faq-card">
+          <span><i class="fa-solid fa-broom"></i></span>
+          <h3>Need more information?</h3>
+          <p>
+            Our team is ready to provide detailed answers to your specific
+            questions.
+          </p>
+        </div>
+      </div>
+      <div class="faq-questions">
+        <h3>Still have questions?</h3>
+        <p>We're committed to providing clear and helpful information</p>
+        <div class="why-choose-cta1"><a href="#">Contact</a></div>
+      </div>
+    </section>
+
+    <section class="data-privacy">
+      <h2>Your data and privacy</h2>
+      <p>
+        We respect your privacy and use your personal information solely to
+        process your cleaning service inquiry. By submitting the form, you
+        consent to being contacted about your specific request. We handle your
+        data with care and confidentiality
+      </p>
+      <p>
+        We collect only the information necessary to provide our cleaning
+        services and communicate effectively with you. Your personal details
+        will not be shared with third parties without your explicit consent.
+      </p>
+      <p>
+        Our commitment is to protect your privacy while delivering exceptional
+        cleaning solutions. We use secure systems to manage your information and
+        ensure it remains confidential.
+      </p>
+      <p>
+        For comprehensive details about how we handle your data, please review
+        our full Privacy Policy available on our website. We are transparent
+        about our data practices and prioritize your trust.
+      </p>
+      <p>
+        If you have any questions about data usage, please contact us directly.
+        We're always happy to provide clarity and address any concerns you may
+        have.
+      </p>
+    </section>
+
+    <section class="experience contact">
+      <div class="exp-header">
+        <h2>Ready to experience clean</h2>
+        <p>
+          Book a cleaning service today and transform your space with Noornest
+          professional cleaning.
+        </p>
+        <div class="experience-cta">
+          <ul role="list" class="cta-hero">
+            <li role="listitem" class="hero-cta2"><a href="#">Book now</a></li>
+            <li role="listitem" class="hero-cta1"><a href="#">Get quote</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="exp-image">
+        <img src="./images/Noornest Cleaning Services.png" alt="cleaners" />
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-top">
+        <div class="footer-content">
+          <img src="./images/logo2.png" alt="logo" class="footer-logo" />
+          <div class="footer-contact">
+            <p>Noornest<br />London, United Kingdom</p>
+            <br />
+            <p>Contact</p>
+            <a href="tel:+4402012345678">+44 (0)20 1234 5678</a>
+            <a href="mailto:hello@noornestcleaning.co.uk"
+              >hello@noornestcleaning.co.uk</a
+            >
+          </div>
+          <ul class="quick-links1" role="list">
+            <li role="listitem"><a href="#"> Our services</a></li>
+            <li role="listitem"><a href="#">Book cleaning</a></li>
+            <li role="listitem"><a href="#">Areas covered</a></li>
+            <li role="listitem"><a href="#">About us</a></li>
+          </ul>
+          <ul class="quick-links2" role="list">
+            <li role="listitem"><a href="#">Customer reviews</a></li>
+            <li role="listitem"><a href="#">FAQ</a></li>
+            <li role="listitem"><a href="#">Careers</a></li>
+            <li role="listitem"><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-socials">
+          <ul class="socials" role="list">
+            <li role="listitem">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li role="listitem" class="instagram">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li role="listitem" class="twitter">
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </li>
+            <li role="listitem">
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li role="listitem" class="youtube">
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2025 Noornest Cleaning Services. All rights reserved</p>
+        <ul class="copyright-links" role="list">
+          <li role="listitem"><a href="#">Privacy policy</a></li>
+          <li role="listitem"><a href="#">Terms of service</a></li>
+          <li role="listitem"><a href="#">Cookies settings</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html>
