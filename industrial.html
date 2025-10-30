@@ -63,8 +63,9 @@
             <li
               role="listitem"
               class="dropdown"
-              onclick="toggleDropdown(event)">
-              <a class="active" href="#"
+              aria-haspopup="true"
+              aria-expanded="false">
+              <a class="dropdown-link" href="#"
                 >Services<i
                   aria-hidden="true"
                   class="fa-solid fa-chevron-down"></i
@@ -78,7 +79,7 @@
                   <a href="./residential.html">Residential Cleaning</a>
                 </li>
                 <li class="dropdown-menu" role="listitem">
-                  <a class="active" href="./industrial.html">Industrial Cleaning</a>
+                  <a href="./industrial.html">Industrial Cleaning</a>
                 </li>
                 <li class="dropdown-menu" role="listitem">
                   <a href="./commercial.html">Commercial Cleaning</a>
@@ -98,8 +99,8 @@
 
       <div class="cta-menu">
         <ul role="list" class="cta-header">
-          <li class="cta1" role="listitem"><a href="#">Book Now</a></li>
-          <li class="cta2" role="listitem"><a href="#">Quote</a></li>
+          <li class="cta1" role="listitem"><a href="#">Free booking</a></li>
+          <li class="cta2" role="listitem"><a href="#">Get a quote</a></li>
         </ul>
         <div onclick="toggleMenu()" class="hamburger">
           <i aria-hidden="true" class="fa-solid fa-bars"></i>
@@ -248,7 +249,7 @@
         </div>
         <div class="add-on-cards">
           <div class="add-on-card">
-            <span><img src="./images/icons/RAKE.svg" alt="icon"></span>
+            <span><img src="./images/icons/RAKE.svg" alt="icon" /></span>
             <h3>Targeted degreasing and surface preparation</h3>
             <p>
               Comprehensive floor and equipment cleaning in controlled, safe
@@ -256,7 +257,7 @@
             </p>
           </div>
           <div class="add-on-card">
-            <span><img src="./images/icons/RAKE.svg" alt="icon"></span>
+            <span><img src="./images/icons/RAKE.svg" alt="icon" /></span>
             <h3>High level access and confined space solutions</h3>
             <p>
               Advanced cleaning techniques using approved access equipment and
@@ -264,7 +265,8 @@
             </p>
           </div>
           <div class="add-on-card">
-            <span><i aria-hidden="true" class="fa-solid fa-screwdriver-wrench"></i></span>
+            <span
+              ><img src="./images/icons/construction.svg" alt="icon"></span>
             <h3>Maintenance and post construction cleaning</h3>
             <p>
               Detailed cleaning and preparation for line markings and
@@ -272,7 +274,7 @@
             </p>
           </div>
           <div class="add-on-card">
-            <span><i aria-hidden="true" class="fa-solid fa-cloud"></i></span>
+            <span><img src="./images/icons/precision_manufacturing.svg" alt="icon"></span>
             <h3>Precision restoration and finishing</h3>
             <p>
               Meticulous clean up and preparation of designated areas with
@@ -977,7 +979,7 @@
         </div>
         <div class="process-cards">
           <div class="why-choose-card">
-            <span><i aria-hidden="true" class="fa-solid fa-broom"></i></span>
+            <span><img src="./images/icons/RAKE.svg" alt="icon"></span>
             <h3>Site investigation</h3>
             <p>
               Comprehensive site walk through to map critical cleaning
@@ -988,7 +990,7 @@
             <img src="./images/Untitled design (2).png" alt="cleaners" />
           </div>
           <div class="why-choose-card">
-            <span><i aria-hidden="true" class="fa-solid fa-broom"></i></span>
+            <span><img src="./images/icons/precision_manufacturing.svg" alt="icon"></span>
             <h3>Precision deployment</h3>
             <p>
               Trained specialists execute cleaning strategies with surgical
@@ -996,7 +998,7 @@
             </p>
           </div>
           <div class="why-choose-card">
-            <span><i aria-hidden="true" class="fa-solid fa-clock"></i></span>
+            <span><img src="./images/icons/strategy.svg" alt="icon"></span>
             <h3>Strategic planning</h3>
             <p>
               Develop detailed method statements that align cleaning protocols
@@ -1005,8 +1007,7 @@
           </div>
           <div class="why-choose-card">
             <span
-              ><i aria-hidden="true" class="fa-solid fa-heart-pulse"></i
-            ></span>
+              ><img src="./images/icons/self_improvement.svg" alt="icon"></span>
             <h3>Performance review</h3>
             <p>
               Collaborative assessment and continuous improvement process to
@@ -1350,7 +1351,7 @@
         </div>
         <div class="faq-cards">
           <div class="faq-card">
-            <span><i aria-hidden="true" class="fa-solid fa-broom"></i></span>
+            <span><img src="./images/icons/live_help.svg" alt="icon"></span>
             <h3>Live production cleaning challenges</h3>
             <p>
               We navigate live environments with strict safety protocols and
@@ -1358,7 +1359,7 @@
             </p>
           </div>
           <div class="faq-card">
-            <span><i aria-hidden="true" class="fa-solid fa-broom"></i></span>
+            <span><img src="./images/icons/procedure.svg" alt="icon"></span>
             <h3>Documentation and site preparation</h3>
             <p>
               Comprehensive method statements and site specific inductions
@@ -1366,7 +1367,7 @@
             </p>
           </div>
           <div class="faq-card">
-            <span><img src="/images/icons/RAKE.svg" alt="icon"></span>
+            <span><img src="/images/icons/RAKE.svg" alt="icon" /></span>
             <h3>Complex access cleaning solutions</h3>
             <p>
               Our trained teams use specialized equipment to safely clean hard
@@ -1374,7 +1375,7 @@
             </p>
           </div>
           <div class="faq-card">
-            <span><i aria-hidden="true" class="fa-solid fa-recycle"></i></span>
+            <span><img src="./images/icons/recycling.svg" alt="icon"></span>
             <h3>Hazardous waste management</h3>
             <p>
               We coordinate with licensed contractors to handle specialized
@@ -1382,7 +1383,8 @@
             </p>
           </div>
           <div class="faq-card">
-            <span><i aria-hidden="true" class="fa-solid fa-star-of-life"></i></span>
+            <span
+              ><img src="./images/icons/emergency.svg" alt="icon"></span>
             <h3>Emergency response capabilities</h3>
             <p>
               Rapid deployment teams ready to address urgent industrial cleaning
@@ -1390,7 +1392,7 @@
             </p>
           </div>
           <div class="faq-card">
-            <span><i aria-hidden="true" class="fa-solid fa-broom"></i></span>
+            <span><img src="./images/icons/strategy.svg" alt="icon"></span>
             <h3>Customized cleaning strategies</h3>
             <p>
               Tailored approaches that adapt to your unique industrial

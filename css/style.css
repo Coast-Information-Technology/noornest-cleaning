@@ -133,13 +133,12 @@ header {
 
 .dropdown {
   position: relative;
+  transition: 0.4s;
 }
 
-.dropdown ul {
+.dropdown-content {
   display: none;
-  position: absolute;
-  width: 300px;
-  left: -6rem;
+  width: 100%;
   background-color: var(--secondary-color);
   border-radius: 10px;
   padding: 1rem;
@@ -171,7 +170,7 @@ header {
 }
 
 .cta-header a {
-  padding: 0.8rem 1.8rem;
+  padding: 0.8rem 1rem;
   border-radius: 50px;
   font-weight: 600;
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
@@ -210,7 +209,7 @@ header {
   color: var(--shade-one);
 }
 
-.dropdown-menu a.active{
+.dropdown-menu a.active {
   color: var(--shade-one);
 }
 
@@ -1628,15 +1627,15 @@ footer a:is(:hover, :focus-visible) {
   gap: 2rem;
 }
 
-.limitation-card.one{
+.limitation-card.one {
   background-image: url(/images/cardbg1.png);
 }
 
-.limitation-card.two{
+.limitation-card.two {
   background-image: url(/images/cardbg2.png);
 }
 
-.limitation-card.three{
+.limitation-card.three {
   background-image: url(/images/cardbg3.png);
 }
 
@@ -2250,7 +2249,8 @@ form .submit button:is(:hover, :focus-visible) {
   border-bottom: 2px solid var(--primary-color);
 }
 
-.protection-img img, .section-img img{
+.protection-img img,
+.section-img img {
   width: 100%;
   margin: auto;
   border-radius: 20px;
@@ -2306,12 +2306,11 @@ img[alt="icon"] {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  
-.trust-side-header {
-  position: sticky;
-  top: 100px;
-  align-items: flex-start;
-}
+  .trust-side-header {
+    position: sticky;
+    top: 100px;
+    align-items: flex-start;
+  }
 
   .cta-header,
   .cta-menu {
@@ -2399,6 +2398,12 @@ img[alt="icon"] {
   }
 }
 
+@media (max-width: 919px){
+  .dropdown.active .dropdown-link{
+    margin-left:3.5rem;
+  }
+}
+
 @media (min-width: 920px) {
   .nav-links {
     display: flex;
@@ -2408,6 +2413,16 @@ img[alt="icon"] {
     gap: 1.2rem;
     padding: 0;
     box-shadow: none;
+  }
+
+  .dropdown-content {
+    position: absolute;
+    left: -6rem;
+    width: 300px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
 
   .hamburger {

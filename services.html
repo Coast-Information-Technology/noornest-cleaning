@@ -59,12 +59,12 @@
             <li role="listitem">
               <a href="./aboutus.html">About Us</a>
             </li>
-
             <li
               role="listitem"
               class="dropdown"
-              onclick="toggleDropdown(event)">
-              <a class="active" href="#"
+              aria-haspopup="true"
+              aria-expanded="false">
+              <a class="dropdown-link" href="#"
                 >Services<i
                   aria-hidden="true"
                   class="fa-solid fa-chevron-down"></i
@@ -72,7 +72,7 @@
 
               <ul role="list" class="dropdown-content">
                 <li class="dropdown-menu" role="listitem">
-                  <a class="active" href="./services.html">Our Services</a>
+                  <a href="./services.html">Our Services</a>
                 </li>
                 <li class="dropdown-menu" role="listitem">
                   <a href="./residential.html">Residential Cleaning</a>
@@ -98,8 +98,8 @@
 
       <div class="cta-menu">
         <ul role="list" class="cta-header">
-          <li class="cta1" role="listitem"><a href="#">Book Now</a></li>
-          <li class="cta2" role="listitem"><a href="#">Quote</a></li>
+          <li class="cta1" role="listitem"><a href="#">Free booking</a></li>
+          <li class="cta2" role="listitem"><a href="#">Get a quote</a></li>
         </ul>
         <div onclick="toggleMenu()" class="hamburger">
           <i aria-hidden="true" class="fa-solid fa-bars"></i>
@@ -141,7 +141,9 @@
             </p>
           </div>
           <div class="why-choose-card precision">
-            <span><i aria-hidden="true" class="fa-solid fa-helmet-safety"></i></span>
+            <span
+              ><i aria-hidden="true" class="fa-solid fa-helmet-safety"></i
+            ></span>
             <h3>Industrial cleaning with safety first</h3>
             <p>
               Specialized cleaning for warehouses and light industrial sites.
@@ -282,7 +284,7 @@
             <p>Detailed cleaning for appliances, windows, and hidden spaces.</p>
           </div>
           <div class="why-choose-card">
-            <span><i aria-hidden="true" class="fa-solid fa-cube"></i></span>
+            <span><img src="./images/icons/precision_manufacturing.svg" alt="icon"></span>
             <h3>Specialized treatments</h3>
             <p>
               Limescale removal and precision cleaning for delicate surfaces..
@@ -290,7 +292,7 @@
           </div>
           <div class="why-choose-card">
             <span
-              ><i aria-hidden="true" class="fa-solid fa-book-bookmark"></i
+              ><img src="./images/icons/package.svg" alt="icon"></i
             ></span>
             <h3>Complete care package</h3>
             <p>Comprehensive add-ons that leave no corner untouched.</p>
@@ -322,7 +324,7 @@
         </div>
         <div class="process-cards">
           <div class="why-choose-card">
-            <span><i aria-hidden="true" class="fa-solid fa-broom"></i></span>
+            <span><img src="./images/icons/details.svg" alt="icon"></span>
             <h3>Tell us your needs</h3>
             <p>Share the details of your space and when you want it cleaned</p>
           </div>
@@ -330,7 +332,7 @@
             <img src="./images/Untitled design (2).png" alt="cleaners" />
           </div>
           <div class="why-choose-card">
-            <span><i aria-hidden="true" class="fa-solid fa-broom"></i></span>
+            <span><img src="./images/icons/precision_manufacturing.svg" alt="icon"></span>
             <h3>We clean thoroughly</h3>
             <p>
               Our trained professionals execute a meticulous cleaning with
@@ -347,8 +349,7 @@
           </div>
           <div class="why-choose-card">
             <span
-              ><i aria-hidden="true" class="fa-solid fa-heart-pulse"></i
-            ></span>
+              ><img src="./images/icons/relax.svg" alt="icon"></span>
             <h3>Enjoy the result</h3>
             <p>Relax and appreciate your transformed, sparkling clean space.</p>
           </div>
@@ -439,7 +440,7 @@
         </div>
         <div class="faq-cards">
           <div class="faq-card">
-            <span><i aria-hidden="true" class="fa-solid fa-broom"></i></span>
+            <span><img src="./images/icons/tools_level.svg" alt="icon"></span>
             <h3>What equipment do you use?</h3>
             <p>
               We use professional-grade tools and eco-friendly equipment
@@ -455,7 +456,7 @@
             </p>
           </div>
           <div class="faq-card">
-            <span><i class="fa-solid fa-couch"></i></span>
+            <span><img src="./images/icons/weekend.svg" alt="icon"></span>
             <h3>Do you offer weekend services?</h3>
             <p>
               Yes, we provide flexible scheduling including weekend
@@ -463,7 +464,7 @@
             </p>
           </div>
           <div class="faq-card">
-            <span><i aria-hidden="true" class="fa-solid fa-broom"></i></span>
+            <span><img src="./images/icons/interactive_space.svg" alt="icon"></span>
             <h3>What are your pricing options?</h3>
             <p>
               We offer transparent pricing with customized quotes for each
@@ -472,8 +473,7 @@
           </div>
           <div class="faq-card">
             <span
-              ><i aria-hidden="true" class="fa-solid fa-shield-halved"></i
-            ></span>
+              ><img src="./images/icons/security.svg" alt="icon"></span>
             <h3>How do you protect my property?</h3>
             <p>
               Our teams are fully insured and trained to handle your space with

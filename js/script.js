@@ -4,32 +4,30 @@ const toggleMenu = () => {
   navMenu.classList.toggle("active");
 };
 
-function toggleDropdown(event) {
-  const dropdowns = event.target.closest(".dropdown");
+const accordion = document.querySelector(".dropdown");
+const menu = document.querySelector(".dropdown-content");
 
-  if (dropdowns) {
-    const dropdownContent = document.querySelector(".dropdown-content");
-    const chevronDown = document.querySelector(".fa-chevron-down");
+accordion.addEventListener("click", ()=> {
 
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-      chevronDown.style.transform = "rotate(0deg)";
-    } else {
-      dropdownContent.style.display = "block";
-      chevronDown.style.transform = "rotate(180deg)";
-    }
+  accordion.classList.toggle("active");
+
+   // <ul class="dropdown-content menu">
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
   }
-}
+});
 
-document.querySelectorAll('.dropdown > a').forEach(link => {
-  link.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' || e.key === ' ') {
+
+document.querySelectorAll(".dropdown > a").forEach((link) => {
+  link.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
       toggleDropdown(e);
     }
   });
 });
-
 
 const tab = () => {
   const tabBtns = document.querySelectorAll(".tab-btn");
@@ -131,28 +129,25 @@ const servicesTab = () => {
 
 servicesTab();
 
+document.querySelectorAll(".protocol-container").forEach((container) => {
+  const buttons = container.querySelectorAll(".protocolBtn");
+  const cards = container.querySelectorAll(".protocol-card");
 
-  document.querySelectorAll(".protocol-container").forEach((container) => {
-    const buttons = container.querySelectorAll(".protocolBtn");
-    const cards = container.querySelectorAll(".protocol-card");
+  buttons.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+      // Remove active state only within this section
+      buttons.forEach((b) => b.classList.remove("active"));
+      cards.forEach((c) => c.classList.remove("active"));
 
-    buttons.forEach((btn, index) => {
-      btn.addEventListener("click", () => {
-        // Remove active state only within this section
-        buttons.forEach((b) => b.classList.remove("active"));
-        cards.forEach((c) => c.classList.remove("active"));
-
-        // Activate the clicked button and its matching card
-        btn.classList.add("active");
-        cards[index].classList.add("active");
-      });
+      // Activate the clicked button and its matching card
+      btn.classList.add("active");
+      cards[index].classList.add("active");
     });
-
-    // Default active state for each section
-    if (buttons.length > 0 && cards.length > 0) {
-      buttons[0].classList.add("active");
-      cards[0].classList.add("active");
-    }
   });
 
-
+  // Default active state for each section
+  if (buttons.length > 0 && cards.length > 0) {
+    buttons[0].classList.add("active");
+    cards[0].classList.add("active");
+  }
+});

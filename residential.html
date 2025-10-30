@@ -63,8 +63,9 @@
             <li
               role="listitem"
               class="dropdown"
-              onclick="toggleDropdown(event)">
-              <a class="active" href="#"
+              aria-haspopup="true"
+              aria-expanded="false">
+              <a class="dropdown-link" href="#"
                 >Services<i
                   aria-hidden="true"
                   class="fa-solid fa-chevron-down"></i
@@ -75,7 +76,7 @@
                   <a href="./services.html">Our Services</a>
                 </li>
                 <li class="dropdown-menu" role="listitem">
-                  <a class="active" href="./residential.html">Residential Cleaning</a>
+                  <a href="./residential.html">Residential Cleaning</a>
                 </li>
                 <li class="dropdown-menu" role="listitem">
                   <a href="./industrial.html">Industrial Cleaning</a>
@@ -85,6 +86,7 @@
                 </li>
               </ul>
             </li>
+
             <li role="listitem">
               <a href="./contact.html">Contact Us</a>
             </li>
@@ -98,8 +100,8 @@
 
       <div class="cta-menu">
         <ul role="list" class="cta-header">
-          <li class="cta1" role="listitem"><a href="#">Book Now</a></li>
-          <li class="cta2" role="listitem"><a href="#">Quote</a></li>
+          <li class="cta1" role="listitem"><a href="#">Free booking</a></li>
+          <li class="cta2" role="listitem"><a href="#">Get a quote</a></li>
         </ul>
         <div onclick="toggleMenu()" class="hamburger">
           <i aria-hidden="true" class="fa-solid fa-bars"></i>
@@ -167,7 +169,7 @@
 
         <div class="workspace-cards">
           <div class="workspace-card flexible">
-            <span><i aria-hidden="true" class="fa-solid fa-house"></i></span>
+            <span><img src="./images/icons/family_home.svg" alt="icon"></span>
             <h3>Busy households</h3>
             <p>
               Reliable upkeep for families and professionals with limited time
@@ -185,8 +187,7 @@
 
           <div class="workspace-card flexible">
             <span
-              ><i aria-hidden="true" class="fa-solid fa-calendar-days"></i
-            ></span>
+              ><img src="./images/icons/event.svg" alt="icon"></span>
             <h3>Event preparation</h3>
             <p>
               Pre and post event refresh to ensure your space looks immaculate
@@ -228,7 +229,7 @@
         </div>
         <div class="add-on-cards">
           <div class="add-on-card">
-            <span><i aria-hidden="true" class="fa-solid fa-stairs"></i></span>
+            <span><img src="./images/icons/floor" alt="icon"></span>
             <h3>Surfaces that shine with attention to detail</h3>
             <p>
               Dust free surfaces from floor to ceiling, maintaining your home s
@@ -237,10 +238,7 @@
           </div>
           <div class="add-on-card">
             <span
-              ><i
-                aria-hidden="true"
-                class="fa-solid fa-temperature-three-quarters"></i
-            ></span>
+              ><img src="./images/icons/switches.svg" alt="icon"></span>
             <h3>High touch points cleaned with expert care</h3>
             <p>
               Switches, handles, and frequently used areas disinfected to keep
@@ -249,8 +247,7 @@
           </div>
           <div class="add-on-card">
             <span
-              ><i aria-hidden="true" class="fa-solid fa-spray-can-sparkles"></i
-            ></span>
+              ><img src="./images/icons/vacuum.svg" alt="icon"></span>
             <h3>Floors that reflect our commitment to cleanliness</h3>
             <p>
               Precise vacuuming and mopping that leaves your floors spotless and
@@ -258,7 +255,7 @@
             </p>
           </div>
           <div class="add-on-card">
-            <span><i aria-hidden="true" class="fa-solid fa-recycle"></i></span>
+            <span><img src="./images/icons/recycling.svg" alt="icon"></span>
             <h3>Waste management done right</h3>
             <p>
               Efficient bin emptying and liner replacement to maintain a fresh
@@ -701,8 +698,7 @@
 
           <div class="workspace-card flexible">
             <span
-              ><i aria-hidden="true" class="fa-solid fa-people-arrows"></i
-            ></span>
+              ><img src="./images/icons/communication.svg" alt="icon"></span>
             <h3>Communication is key</h3>
             <p>
               Share special instructions about pets, access, or specific
@@ -1133,7 +1129,7 @@
             </p>
           </div>
           <div class="faq-card">
-            <span><i aria-hidden="true" class="fa-solid fa-ticket"></i></span>
+            <span><img src="./images/icons/cancel_schedule_send.svg" alt="icon"></span>
             <h3>How flexible are bookings?</h3>
             <p>
               We offer easy online scheduling with options to modify or cancel
@@ -1149,7 +1145,7 @@
             </p>
           </div>
           <div class="faq-card">
-            <span><i aria-hidden="true" class="fa-solid fa-house"></i></span>
+            <span><img src="./images/icons/security_key.svg" alt="icon"></span>
             <h3>What about home access?</h3>
             <p>
               We accommodate secure key exchanges and can work with your
@@ -1157,7 +1153,8 @@
             </p>
           </div>
           <div class="faq-card">
-            <span><i aria-hidden="true" class="fa-solid fa-circle-question"></i></span>
+            <span
+              ><img src="./images/icons/help.svg" alt="icon"></span>
             <h3>Still have questions?</h3>
             <p>Our team is ready to provide personalized guidance</p>
           </div>

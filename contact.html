@@ -63,8 +63,10 @@
             <li
               role="listitem"
               class="dropdown"
-              onclick="toggleDropdown(event)">
-              <a href="#"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >
+              <a class="dropdown-link" href="#"
                 >Services<i
                   aria-hidden="true"
                   class="fa-solid fa-chevron-down"></i
@@ -98,8 +100,8 @@
 
       <div class="cta-menu">
         <ul role="list" class="cta-header">
-          <li class="cta1" role="listitem"><a href="#">Book Now</a></li>
-          <li class="cta2" role="listitem"><a href="#">Quote</a></li>
+          <li class="cta1" role="listitem"><a href="#">Free booking</a></li>
+          <li class="cta2" role="listitem"><a href="#">Get a quote</a></li>
         </ul>
         <div onclick="toggleMenu()" class="hamburger">
           <i aria-hidden="true" class="fa-solid fa-bars"></i>
@@ -333,7 +335,7 @@
         </div>
         <div class="faq-cards">
           <div class="faq-card">
-            <span><i aria-hidden="true" class="fa-solid fa-ticket"></i></span>
+            <span><img src="./images/icons/confirmation_number.svg" alt="icon"></span>
             <h3>Booking timeline</h3>
             <p>
               Most requests are confirmed within 24 hours, with flexible
@@ -341,7 +343,7 @@
             </p>
           </div>
           <div class="faq-card">
-            <span><img src="./images/icons/RAKE.svg" alt="icon" /></span>
+            <span><img src="./images/icons/household_supplies.svg" alt="icon"></span>
             <h3>Cleaning equipment</h3>
             <p>
               We bring professional grade supplies, but can also use your
@@ -350,15 +352,14 @@
           </div>
           <div class="faq-card">
             <span
-              ><i aria-hidden="true" class="fa-solid fa-calendar-xmark"></i
-            ></span>
+              ><img src="./images/icons/free_cancellation.svg" alt="icon"></span>
             <h3>Changing appointments</h3>
             <p>
               Reschedule with at least 24 hours' notice for minimal disruption
             </p>
           </div>
           <div class="faq-card">
-            <span><i aria-hidden="true" class="fa-solid fa-p"></i></span>
+            <span><img src="./images/icons/local_parking.svg" alt="icon"></span>
             <h3>Parking considerations</h3>
             <p>
               Actual parking costs will be transparently communicated before
@@ -367,8 +368,7 @@
           </div>
           <div class="faq-card">
             <span
-              ><i aria-hidden="true" class="fa-solid fa-money-bills"></i
-            ></span>
+              ><img src="./images/icons/payments.svg" alt="icon"></span>
             <h3>Payment methods</h3>
             <p>
               We accept bank transfers, card payments, and provide flexible
@@ -377,8 +377,7 @@
           </div>
           <div class="faq-card">
             <span
-              ><i aria-hidden="true" class="fa-solid fa-circle-exclamation"></i
-            ></span>
+              ><img src="./images/icons/info.svg" alt="icon"></span>
             <h3>Need more information?</h3>
             <p>
               Our team is ready to provide detailed answers to your specific
