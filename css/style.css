@@ -210,6 +210,10 @@ header {
   color: var(--shade-one);
 }
 
+.dropdown-menu a.active{
+  color: var(--shade-one);
+}
+
 /* hero section starts here */
 .hero {
   padding: 2rem;
@@ -887,7 +891,7 @@ footer a:is(:hover, :focus-visible) {
 .hero-service {
   position: relative;
   padding: 2rem;
-  background-image: url(/images/cleaners\ img.jpg);
+  background-image: url(/images/commercial.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -1076,7 +1080,7 @@ footer a:is(:hover, :focus-visible) {
 
 .trust-side-card img {
   border-radius: 15px;
-  width: 40%;
+  width: 60%;
 }
 
 .trust-side-card.accent {
@@ -1098,7 +1102,7 @@ footer a:is(:hover, :focus-visible) {
 .commercial-hero {
   position: relative;
   padding: 2rem;
-  background-color: var(--primary-color);
+  background-color: var(--accent-color);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -1109,11 +1113,11 @@ footer a:is(:hover, :focus-visible) {
   inset: 0;
   background-image: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.1)
+    rgb(0, 71, 171),
+    rgba(0, 71, 171, 0.74),
+    rgba(0, 71, 171, 0.363),
+    rgba(0, 71, 171, 0.226),
+    rgba(0, 71, 171, 0.096)
   );
   content: "";
   position: absolute;
@@ -1219,7 +1223,10 @@ footer a:is(:hover, :focus-visible) {
 }
 
 .mini-containers,
-.left-container {
+.left-container,
+.top-safety-card,
+.bottom-right-card,
+.top-right-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1620,8 +1627,19 @@ footer a:is(:hover, :focus-visible) {
   gap: 2rem;
 }
 
+.limitation-card.one{
+  background-image: url(/images/cardbg1.png);
+}
+
+.limitation-card.two{
+  background-image: url(/images/cardbg2.png);
+}
+
+.limitation-card.three{
+  background-image: url(/images/cardbg3.png);
+}
+
 .limitation-card {
-  background: url(/images/client\ img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1923,13 +1941,13 @@ form {
   align-items: center;
 }
 
-.contact-div a{
+.contact-div a {
   color: var(--secondary-color);
   text-decoration: underline;
   text-decoration-color: var(--secondary-color);
 }
 
-.contact-div a:is(:hover, :focus-visible){
+.contact-div a:is(:hover, :focus-visible) {
   color: var(--primary-color);
 }
 
@@ -1938,7 +1956,10 @@ form {
   color: var(--secondary-color);
 }
 
-.contact-div h3, .understand-process h3, .sustain-cards h3, .protection-content h3{
+.contact-div h3,
+.understand-process h3,
+.sustain-cards h3,
+.protection-content h3 {
   font-size: 1.2rem;
   font-weight: 550;
 }
@@ -1982,7 +2003,9 @@ label[for="message"] {
 
 .request h2,
 .book-quickly h2,
-.data-privacy h2, .understand-header h2, .sustainability h2{
+.data-privacy h2,
+.understand-header h2,
+.sustainability h2 {
   font-size: var(--h2font-size);
   font-weight: var(--h2font-weight);
 }
@@ -2111,6 +2134,7 @@ form .submit button:is(:hover, :focus-visible) {
 /********************************/
 /* about us page starts here */
 /********************************/
+
 .eco-friendly.about {
   margin-block-start: 5rem;
 }
@@ -2128,53 +2152,58 @@ form .submit button:is(:hover, :focus-visible) {
   gap: 3rem;
 }
 
-.understand-header, .understand-process, .sustain-side-container, .sustain-card, .sustain-head, .protection-content{
+.understand-header,
+.understand-process,
+.sustain-side-container,
+.sustain-card,
+.sustain-head,
+.protection-content {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.understanding .eco-cta1 a{
+.understanding .eco-cta1 a {
   background-color: var(--third-tint);
   color: var(--secondary-color);
   border: 0;
 }
 
-.understanding .eco-cta1 a:is(:hover, :focus-visible){
+.understanding .eco-cta1 a:is(:hover, :focus-visible) {
   background-color: var(--accent-color);
 }
 
-.understanding .eco-cta2 a{
+.understanding .eco-cta2 a {
   color: var(--third-tint);
 }
 
-.understanding .eco-cta1 a:is(:hover, :focus-visible){
+.understanding .eco-cta1 a:is(:hover, :focus-visible) {
   color: var(--accent-color);
 }
 
-.contents{
+.contents {
   display: flex;
   gap: 1rem;
   padding-block: 1rem;
   align-items: flex-start;
 }
 
-.contents span i{
+.contents span i {
   font-size: 2rem;
 }
 
-.contents span{
+.contents span {
   display: flex;
   flex-direction: column;
 }
 
-.contents span div{
+.contents span div {
   width: 20px;
   height: 100%;
- color: var(--bg-color);
+  color: var(--bg-color);
 }
 
-.sustainability{
+.sustainability {
   color: var(--secondary-color);
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -2182,32 +2211,32 @@ form .submit button:is(:hover, :focus-visible) {
   gap: 3rem;
 }
 
-.sustain-cards{
+.sustain-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
-.sustain-cards span i{
+.sustain-cards span i {
   color: var(--primary-color);
   font-size: 2rem;
 }
 
- .sustain-side-container{
+.sustain-side-container {
   gap: 2rem;
- }
+}
 
-.sustain-img img{
+.sustain-img img {
   border-radius: 20px;
 }
 
-.protection{
+.protection {
   color: var(--secondary-color);
   padding: 3rem 2rem;
   background-color: var(--third-tint);
 }
 
-.protection-container{
+.protection-container {
   padding-block-start: 3rem;
   align-items: center;
   display: grid;
@@ -2215,19 +2244,40 @@ form .submit button:is(:hover, :focus-visible) {
   grid-template-columns: repeat(1, 1fr);
 }
 
-.protection-content div{
+.protection-content div {
   padding-block: 2rem;
   border-bottom: 2px solid var(--primary-color);
 }
 
-.protection-img img{
+.protection-img img, .section-img img{
   width: 100%;
   margin: auto;
   border-radius: 20px;
 }
 
-.protection-content{
+.protection-content {
   gap: 0;
+}
+
+.cleaning-card img,
+.contact-us img,
+.quality-card img {
+  border-radius: 20px;
+}
+
+img[alt="icon"] {
+  width: 2.5rem;
+  height: 2rem;
+}
+
+.why-choose-us.cleaning-needs img[alt="icon"] {
+  filter: brightness(0) invert(1);
+}
+
+.right-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
 }
 /* media query starts here */
 @media (min-width: 768px) {
@@ -2249,7 +2299,9 @@ form .submit button:is(:hover, :focus-visible) {
   .career-growth,
   .input-span,
   .book-quickly,
-  .understanding, .sustainability, .protection-container{
+  .understanding,
+  .sustainability,
+  .protection-container {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -2330,9 +2382,7 @@ form .submit button:is(:hover, :focus-visible) {
   }
 
   .right-container {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
   }
 
   .contact-container {
@@ -2341,7 +2391,7 @@ form .submit button:is(:hover, :focus-visible) {
   }
 }
 
-@media (min-width: 870px) {
+@media (min-width: 920px) {
   .nav-links {
     display: flex;
     flex-direction: row;
@@ -2411,7 +2461,9 @@ form .submit button:is(:hover, :focus-visible) {
   .send-details,
   .book-quickly,
   .what-we-do,
-  .understanding, .sustainability, .protection{
+  .understanding,
+  .sustainability,
+  .protection {
     padding: 3rem;
   }
 
