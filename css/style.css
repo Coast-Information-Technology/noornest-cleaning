@@ -1008,7 +1008,6 @@ footer a:is(:hover, :focus-visible) {
 }
 
 .trust-side-header {
-  position: sticky;
   padding: 8rem 2rem;
   display: flex;
   flex-direction: column;
@@ -1340,6 +1339,8 @@ footer a:is(:hover, :focus-visible) {
 }
 
 .top-right-card img {
+  width: 100%;
+  height: 100%;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
 }
@@ -2304,6 +2305,13 @@ img[alt="icon"] {
   .protection-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  
+.trust-side-header {
+  position: sticky;
+  top: 100px;
+  align-items: flex-start;
+}
 
   .cta-header,
   .cta-menu {
