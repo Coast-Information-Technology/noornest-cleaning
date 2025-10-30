@@ -2267,7 +2267,7 @@ form .submit button:is(:hover, :focus-visible) {
 
 img[alt="icon"] {
   width: 2.5rem;
-  height: 2rem;
+  height: 2.5rem;
 }
 
 .why-choose-us.cleaning-needs img[alt="icon"] {
