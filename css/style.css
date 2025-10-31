@@ -213,6 +213,10 @@ header {
   color: var(--shade-one);
 }
 
+.hamburger{
+  cursor: pointer;
+}
+
 /* hero section starts here */
 .hero {
   padding: 2rem;
@@ -835,7 +839,7 @@ footer a:is(:hover, :focus-visible) {
 .copyright-links a {
   display: block;
   text-decoration: underline;
-  text-decoration-color: var(--accent-color);
+  text-decoration-color: var(--third-tint);
 }
 
 .footer-top {
@@ -1769,6 +1773,11 @@ footer a:is(:hover, :focus-visible) {
   color: var(--secondary-color);
 }
 
+.pricing-clarity.flexible .cost-cta a:is(:hover, :focus-visible){
+  background-color: var(--first-tint);
+}
+
+
 .pricing-clarity.flexible .pricing-btn,
 .pricing-clarity.flexible .cost-card {
   background-color: var(--secondary-color);
@@ -2279,6 +2288,11 @@ img[alt="icon"] {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
+}
+
+
+.pricing-clarity.costs .cost-cta a:is(:hover, :focus-visible){
+  background-color: var(--secondary-color);
 }
 /* media query starts here */
 @media (min-width: 768px) {
