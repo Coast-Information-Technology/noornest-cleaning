@@ -53,20 +53,6 @@ const tab = () => {
 // ✅ Call the function after the DOM is loaded
 document.addEventListener("DOMContentLoaded", tab);
 
-document.addEventListener("DOMContentLoaded", function () {
-  const video = document.getElementById("heroVideo");
-  const playBtn = document.getElementById("playBtn");
-
-  playBtn.addEventListener("click", function () {
-    video.play();
-    playBtn.style.display = "none"; // hide button
-  });
-
-  video.addEventListener("ended", function () {
-    playBtn.style.display = "flex"; // show button again
-  });
-});
-
 const qualityTab = () => {
   const qualityBtns = document.querySelectorAll(".qualityBtn");
   const qualityCards = document.querySelectorAll(".quality-card");

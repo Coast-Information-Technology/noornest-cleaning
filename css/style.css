@@ -282,30 +282,6 @@ header {
   height: 100%;
 }
 
-.play-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: transparent;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 5;
-  transition: opacity 0.3s ease;
-}
-
-.play-btn i {
-  font-size: 6rem;
-  color: white;
-}
-
-.play-btn:hover {
-  opacity: 0.8;
-}
-
 /* eco friendly section starts here */
 .eco-friendly {
   padding: 3rem 2rem;
@@ -2149,6 +2125,7 @@ form .submit button:is(:hover, :focus-visible) {
 }
 
 .experience.about {
+  align-items: normal;
   text-align: unset;
 }
 
@@ -2290,9 +2267,12 @@ img[alt="icon"] {
   gap: 2rem;
 }
 
-
 .pricing-clarity.costs .cost-cta a:is(:hover, :focus-visible){
   background-color: var(--secondary-color);
+}
+
+.location-card img{
+  border-radius: 20px;
 }
 /* media query starts here */
 @media (min-width: 768px) {
@@ -2462,7 +2442,7 @@ img[alt="icon"] {
   .why-choose-cards,
   .faq-cards,
   .price-cards,
-  .limitation-cards {
+  .limitation-cards, .location-cards {
     grid-template-columns: repeat(3, 1fr);
   }
 
