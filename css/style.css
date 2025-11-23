@@ -3441,4 +3441,17 @@ img[alt="icon"] {
     gap: 2.5rem;
     align-items: center;
   }
+
+  .commercial-hero-text h1
+ {
+    font-size: 2rem;
+    font-weight: var(--h1font-weight);
+    text-align: center;
+ }
+
+  .commercial-hero-cta ul {
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+}
 }
