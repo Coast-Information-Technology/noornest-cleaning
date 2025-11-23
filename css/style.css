@@ -460,6 +460,14 @@ header {
   background-color: var(--second-tint);
 }
 
+.cleaning-cards a .cleaning-card:hover {
+  box-shadow: 0 8px 12px rgba(0, 71, 171, 0.356);
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
 .accent-bg .cleaning-card h3,
 .accent-bg .cleaning-heading h2 {
   color: var(--primary-color);
