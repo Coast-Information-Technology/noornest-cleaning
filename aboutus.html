@@ -7,10 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
-<link rel="apple-touch-icon" sizes="180x180" href="./images/redketchup/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./images/redketchup/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./images/redketchup/favicon-16x16.png">
-<link rel="manifest" href="./images/redketchup/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/redketchup/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/redketchup/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/redketchup/favicon-16x16.png">
+    <link rel="manifest" href="./images/redketchup/site.webmanifest">
 
 
     <link
@@ -72,24 +72,35 @@
               aria-haspopup="true"
               aria-expanded="false"
               >
-              <a class="dropdown-link" href="#"
+              <a class="dropdown-link" href="/services.html"
                 >Services<i
                   aria-hidden="true"
                   class="fa-solid fa-chevron-down"></i
               ></a>
 
               <ul role="list" class="dropdown-content">
-                <li class="dropdown-menu" role="listitem">
+                <!-- <li class="dropdown-menu" role="listitem">
                   <a href="./services.html">Our Services</a>
+                </li> -->
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./residential-cleaning-service.html"
+                    >Home & Personal Cleaning</a
+                  >
                 </li>
                 <li class="dropdown-menu" role="listitem">
-                  <a href="./residential.html">Residential Cleaning</a>
+                  <a href="./offices-workplaces-cleaning-service.html">Offices & Workplaces Cleaning</a>
                 </li>
                 <li class="dropdown-menu" role="listitem">
-                  <a href="./industrial.html">Industrial Cleaning</a>
+                  <a href="./retail-clinics-schools-cleaning-service.html">Retail, Clinics & Schools</a>
                 </li>
                 <li class="dropdown-menu" role="listitem">
-                  <a href="./commercial.html">Commercial Cleaning</a>
+                  <a href="./industrial-cleaning-service.html">Industrial & Specialist</a>
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./properties-cleaning-service.html">Property & Real Estate</a>
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./cleaning-service-addOns.html">Add-On Services </a>
                 </li>
               </ul>
             </li>
@@ -107,7 +118,7 @@
       <div class="cta-menu">
         <ul role="list" class="cta-header">
           <li class="cta1" role="listitem"><a href="#">Free booking</a></li>
-          <li class="cta2" role="listitem"><a href="#">Get a quote</a></li>
+          <li class="cta2" role="listitem"><a href="#">Request a Quote</a></li>
         </ul>
         <div onclick="toggleMenu()" class="hamburger">
           <i aria-hidden="true" class="fa-solid fa-bars"></i>
@@ -126,9 +137,9 @@
           </p>
           <div class="commercial-hero-cta">
             <ul role="list" class="cta-commercial">
-              <li role="listitem" class="com-cta1"><a href="#">Book now</a></li>
+              <li role="listitem" class="com-cta1"><a href="#">Book a clean</a></li>
               <li role="listitem" class="com-cta2">
-                <a href="#">Learn more</a>
+                <a href="">Learn more</a>
               </li>
             </ul>
           </div>
@@ -784,11 +795,7 @@
     <script src="./js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
-      AOS.init({
-        duration: 1000,
-        once: true, // animation runs once
-        offset: 100, // distance before triggering
-      });
+      AOS.init();
     </script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </body>
