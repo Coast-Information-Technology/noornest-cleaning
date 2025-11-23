@@ -1483,7 +1483,7 @@ footer a .cat-logo
 }
 
 .commercial-hero-text h1 span {
-  color: var(--accent-color);
+  color: var(--primary-color);
 }
 .commercial-hero-text p {
   line-height: 1.6;
@@ -3407,9 +3407,9 @@ img[alt="icon"] {
   header {
     padding: 0.5rem 1rem;
   }
-  .logo img {
+  /* .logo img {
   width: 5rem;
-}
+} */
   .cta-header .cta1, .cta-header .cta2 {
     display: none;
   }
