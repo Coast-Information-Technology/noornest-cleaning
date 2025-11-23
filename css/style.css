@@ -3017,6 +3017,10 @@ img[alt="icon"] {
   color: #4a5568;
 }
 
+.free-quote-text h1 span {
+  color: var(--first-tint);
+}
+
 /* SIDE ASIDE PANEL */
 
 .quote-aside {
