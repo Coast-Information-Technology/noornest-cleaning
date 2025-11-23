@@ -224,7 +224,7 @@ header {
   color: var(--shade-one);
 }
 
-.hamburger{
+.hamburger {
   cursor: pointer;
 }
 
@@ -249,13 +249,12 @@ header {
   justify-content: center;
   height: 100vh;
   width: 100%;
-
 }
 
 .hero::after {
   content: "";
   inset: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   z-index: 2;
 }
@@ -458,7 +457,8 @@ header {
   background-color: var(--second-tint);
 }
 
-.accent-bg .cleaning-card h3, .accent-bg .cleaning-heading h2 {
+.accent-bg .cleaning-card h3,
+.accent-bg .cleaning-heading h2 {
   color: var(--primary-color);
   text-transform: capitalize;
 }
@@ -467,13 +467,14 @@ header {
   color: #272727;
 }
 
-.accent-bg .cleaning-card p, .accent-bg .cleaning-card p {
+.accent-bg .cleaning-card p,
+.accent-bg .cleaning-card p {
   color: #272727;
 }
 
 .accent-bg .cleaning-card ul li {
   color: #272727;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .cleaning-solutions p {
@@ -489,7 +490,8 @@ header {
   padding-block: 0.7rem;
 }
 
-.cleaning-heading h2, .cleaning-heading p {
+.cleaning-heading h2,
+.cleaning-heading p {
   max-width: 90%;
   margin: auto;
 }
@@ -515,7 +517,7 @@ header {
 }
 
 .cleaning-card ul li {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   color: var(--second-tint);
   list-style-type: disc;
 }
@@ -965,6 +967,9 @@ footer a:is(:hover, :focus-visible) {
 .socials {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .socials a {
@@ -1005,7 +1010,7 @@ footer a:is(:hover, :focus-visible) {
 .hero-service {
   position: relative;
   padding: 2rem;
-  background-image: url('/images/commercial.jpg');
+  background-image: url("/images/commercial.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -1087,11 +1092,8 @@ footer a:is(:hover, :focus-visible) {
   text-decoration: none;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  transition:
-    background-color 0.2s ease,
-    border-color 0.2s ease,
-    transform 0.15s ease,
-    box-shadow 0.15s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .service-nav-list a:hover {
@@ -1237,16 +1239,19 @@ footer a:is(:hover, :focus-visible) {
 /* Slight hover feedback (optional but nice on desktop) */
 @media (hover: hover) and (pointer: fine) {
   .service-overview-column {
-    transition:
-      transform 0.18s ease,
-      box-shadow 0.18s ease,
+    transition: transform 0.18s ease, box-shadow 0.18s ease,
       border-color 0.18s ease;
   }
 
   .service-overview-column:hover {
     transform: translateY(-3px);
     box-shadow: 0 14px 35px rgba(15, 23, 42, 0.12);
-    border-color: rgba(56, 189, 248, 0.5); /* subtle highlight; adjust to brand colour */
+    border-color: rgba(
+      56,
+      189,
+      248,
+      0.5
+    ); /* subtle highlight; adjust to brand colour */
   }
 }
 
@@ -1457,7 +1462,6 @@ footer a:is(:hover, :focus-visible) {
   align-items: center;
   text-align: center;
   justify-content: center;
-  padding-block-start: 5rem;
   max-width: 80%;
   margin: auto;
   height: 100vh;
@@ -1466,10 +1470,18 @@ footer a:is(:hover, :focus-visible) {
 .commercial-hero-text h1 {
   font-size: var(--h1font-size);
   font-weight: var(--h1font-weight);
+  text-align: center;
 }
 
 .commercial-hero-text h1 span {
-  color: var(--bg-primary);
+  color: var(--accent-color);
+}
+.commercial-hero-text p {
+  line-height: 1.6;
+  text-align: center;
+}
+.commercial-hero-text .cta-menu {
+  margin-block-start: 1.5rem;
 }
 
 .commercial-hero-cta ul {
@@ -1506,7 +1518,6 @@ footer a:is(:hover, :focus-visible) {
   color: var(--bg-color);
   background-color: var(--primary-color);
   transition: all 0.3s ease-in-out;
-
 }
 
 /* commercial spaces starts here */
@@ -2117,10 +2128,9 @@ footer a:is(:hover, :focus-visible) {
   color: var(--secondary-color);
 }
 
-.pricing-clarity.flexible .cost-cta a:is(:hover, :focus-visible){
+.pricing-clarity.flexible .cost-cta a:is(:hover, :focus-visible) {
   background-color: var(--first-tint);
 }
-
 
 .pricing-clarity.flexible .pricing-btn,
 .pricing-clarity.flexible .cost-card {
@@ -2646,11 +2656,11 @@ img[alt="icon"] {
   gap: 2rem;
 }
 
-.pricing-clarity.costs .cost-cta a:is(:hover, :focus-visible){
+.pricing-clarity.costs .cost-cta a:is(:hover, :focus-visible) {
   background-color: var(--secondary-color);
 }
 
-.location-card img{
+.location-card img {
   border-radius: 20px;
 }
 
@@ -2731,8 +2741,8 @@ img[alt="icon"] {
   font-weight: 500;
   text-decoration: none;
   border: 1px solid transparent;
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease,
-    transform 0.15s ease;
+  transition: background-color 0.2s ease, color 0.2s ease,
+    border-color 0.2s ease, transform 0.15s ease;
 }
 
 .commercial-hero.quote .com-cta1.quote a {
@@ -2849,7 +2859,7 @@ img[alt="icon"] {
 }
 
 .quote-field label span {
-  color: #c53030;
+  color: var(--primary-color);
   margin-left: 0.1rem;
 }
 
@@ -2864,7 +2874,8 @@ img[alt="icon"] {
   background-color: #ffffff;
   color: inherit;
   outline: none;
-  transition: border-color 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease,
+    background-color 0.18s ease;
 }
 
 .quote-field textarea {
@@ -3092,9 +3103,8 @@ img[alt="icon"] {
   }
 }
 
-
 @media (min-width: 1060px) {
-    .nav-links {
+  .nav-links {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -3245,7 +3255,8 @@ img[alt="icon"] {
     justify-content: space-between;
   }
 
-  .cleaning-heading h2, .cleaning-heading p {
+  .cleaning-heading h2,
+  .cleaning-heading p {
     width: 60%;
     margin: auto;
   }
@@ -3255,9 +3266,9 @@ img[alt="icon"] {
   }
 }
 
-@media (max-width: 919px){
-  .dropdown.active .dropdown-link{
-    margin-left:3.5rem;
+@media (max-width: 919px) {
+  .dropdown.active .dropdown-link {
+    margin-left: 3.5rem;
   }
 
   .hero-content {
@@ -3279,7 +3290,8 @@ img[alt="icon"] {
   .why-choose-cards,
   .faq-cards,
   .price-cards,
-  .limitation-cards, .location-cards {
+  .limitation-cards,
+  .location-cards {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -3379,33 +3391,36 @@ img[alt="icon"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }  
+  }
 }
 
 @media (max-width: 600px) {
-   .cta-header .cta1 {
+  .cta-header .cta1 {
     display: none;
-   }
+  }
 
-   .cta-header a, .eco-cta a {
-    padding: .5rem;
-   }
+  .cta-header a,
+  .eco-cta a {
+    padding: 0.5rem;
+  }
 
-   .eco-cta ul, .cleaning-cta ul, .why-choose-cta ul {
+  .eco-cta ul,
+  .cleaning-cta ul,
+  .why-choose-cta ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2.5rem;
     align-items: center;
-   }
+  }
 
-   .hero-content h1 {
+  .hero-content h1 {
     font-size: 2rem;
-   }
+  }
 
-   .experience-cta .cta-hero {
+  .experience-cta .cta-hero {
     flex-direction: column;
     gap: 2.5rem;
     align-items: center;
-   }
+  }
 }
