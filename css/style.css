@@ -166,6 +166,9 @@ header {
   gap: 0.5rem;
   align-items: center;
 }
+.cta-header .cta3 {
+    display: none;
+  }
 
 .nav-links a {
   font-size: var(--text-font-size);
@@ -3401,8 +3404,17 @@ img[alt="icon"] {
 }
 
 @media (max-width: 600px) {
-  .cta-header .cta1 {
+  header {
+    padding: 0.5rem 1rem;
+  }
+  .logo img {
+  width: 5rem;
+}
+  .cta-header .cta1, .cta-header .cta2 {
     display: none;
+  }
+  .cta-header .cta3 {
+    display: inline;
   }
 
   .cta-header a,
