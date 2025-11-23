@@ -932,6 +932,13 @@ footer a:is(:hover, :focus-visible) {
   margin: auto;
 }
 
+footer a .cat-logo 
+{
+  padding: 1.5rem;
+  background-color: var(--bg-color);
+  margin-block-start: .6rem;
+}
+
 .footer-content {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -3417,7 +3424,7 @@ img[alt="icon"] {
     font-size: 2rem;
   }
 
-  .experience-cta .cta-hero {
+  .experience-cta .cta-hero, .trust-cta ul {
     flex-direction: column;
     gap: 2.5rem;
     align-items: center;
