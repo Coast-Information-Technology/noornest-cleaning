@@ -229,7 +229,7 @@ header {
 }
 
 .hamburger i {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 /* hero section starts here */
@@ -2625,7 +2625,7 @@ img[alt="icon"] {
 }
 
 .cleaning-card .image-div {
-  width: 500px;
+  /* width: 500px; */
   height: 250px;
 }
 
@@ -2653,6 +2653,445 @@ img[alt="icon"] {
 .location-card img{
   border-radius: 20px;
 }
+
+/* ================================
+   FREE QUOTE PAGE – HERO
+   ================================ */
+
+.commercial-hero.quote {
+  position: relative;
+  min-height: 70vh;
+  padding: 5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--accent-color);
+  background-size: cover;
+  background-position: center;
+  color: var(--bg-color, #ffffff);
+}
+
+.commercial-hero.quote::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(6, 33, 64, 0.9),
+    rgba(6, 33, 64, 0.65),
+    rgba(6, 33, 64, 0.5)
+  );
+}
+
+.commercial-hero.quote .commercial-hero-text {
+  position: relative;
+  max-width: 720px;
+  margin-inline: auto;
+  text-align: left;
+}
+
+.commercial-hero.quote p:first-child {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.commercial-hero.quote h1 {
+  font-size: clamp(2.2rem, 3vw, 2.8rem);
+  line-height: 1.15;
+  margin-block: 0.75rem 1rem;
+}
+
+.commercial-hero.quote h1 span {
+  display: block;
+}
+
+.commercial-hero.quote p {
+  max-width: 40rem;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.commercial-hero.quote .cta-commercial {
+  margin-top: 1.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.commercial-hero.quote .com-cta1.quote a,
+.commercial-hero.quote .com-cta2.quote a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  padding: 0.85rem 1.4rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease,
+    transform 0.15s ease;
+}
+
+.commercial-hero.quote .com-cta1.quote a {
+  background-color: var(--accent-color, #00b3c7);
+  color: #ffffff;
+}
+
+.commercial-hero.quote .com-cta2.quote a {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.commercial-hero.quote .com-cta1.quote a:hover,
+.commercial-hero.quote .com-cta1.quote a:focus-visible {
+  transform: translateY(-1px);
+  background-color: var(--accent-color-strong, #0193a5);
+}
+
+.commercial-hero.quote .com-cta2.quote a:hover,
+.commercial-hero.quote .com-cta2.quote a:focus-visible {
+  transform: translateY(-1px);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* ================================
+   QUOTE HIGHLIGHTS (we re-use workspace-cleaning)
+   ================================ */
+
+.quote-highlights {
+  padding-block: 3.5rem 2.5rem;
+}
+
+/* ================================
+   QUOTE FORM SECTION
+   ================================ */
+
+.quote-section {
+  padding: 3.5rem 1.5rem 4rem;
+  background-color: #f7fafc;
+  color: var(--text-color, #0b2340);
+}
+
+.quote-inner {
+  max-width: 1120px;
+  margin-inline: auto;
+}
+
+.quote-header p:first-child {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.8rem;
+  color: var(--accent-color, #00b3c7);
+}
+
+.quote-header h2 {
+  margin-block: 0.5rem 0.75rem;
+  font-size: clamp(1.7rem, 2.3vw, 2rem);
+}
+
+.quote-header p:last-of-type {
+  max-width: 36rem;
+  font-size: 0.96rem;
+  line-height: 1.7;
+}
+
+.quote-header span {
+  font-weight: 600;
+}
+
+/* Layout: form + side panel */
+
+.quote-form-layout {
+  margin-top: 2.25rem;
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 2.25rem;
+  align-items: flex-start;
+}
+
+/* FORM BASE */
+
+.quote-form {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.75rem 1.5rem 1.9rem;
+  box-shadow: 0 14px 40px rgba(11, 35, 64, 0.08);
+}
+
+.quote-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 1.75rem;
+}
+
+.quote-fieldset legend {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent-color, #00b3c7);
+  margin-bottom: 0.75rem;
+}
+
+/* Fields */
+
+.quote-field {
+  margin-bottom: 1rem;
+}
+
+.quote-field label {
+  display: inline-block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.quote-field label span {
+  color: #c53030;
+  margin-left: 0.1rem;
+}
+
+.quote-field input,
+.quote-field select,
+.quote-field textarea {
+  width: 100%;
+  font: inherit;
+  padding: 0.7rem 0.8rem;
+  border-radius: 0.55rem;
+  border: 1px solid #d3d8e2;
+  background-color: #ffffff;
+  color: inherit;
+  outline: none;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
+}
+
+.quote-field textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+/* Focus states – accessibility */
+
+.quote-field input:focus-visible,
+.quote-field select:focus-visible,
+.quote-field textarea:focus-visible {
+  border-color: var(--accent-color, #00b3c7);
+  box-shadow: 0 0 0 3px rgba(0, 179, 199, 0.18);
+}
+
+/* Two-column groups in form */
+
+.quote-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+/* Checkbox groups */
+
+.quote-label-inline {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.quote-checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.5rem 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.quote-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+}
+
+.quote-checkbox input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  accent-color: var(--accent-color, #00b3c7);
+}
+
+/* Consent + privacy */
+
+.quote-consent {
+  margin-top: 0.75rem;
+}
+
+.quote-privacy {
+  margin-top: 0.45rem;
+  font-size: 0.82rem;
+  color: #4a5568;
+}
+
+.quote-privacy a {
+  color: var(--accent-color, #00b3c7);
+  text-decoration: underline;
+}
+
+/* Actions */
+
+.quote-actions {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: centre;
+  gap: 0.75rem;
+}
+
+.quote-actions .primary-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 1.2rem 2rem;
+  font-size: 0.98rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: var(--accent-color, #00b3c7);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: centre;
+  justify-content: centre;
+  transition: background-color 0.2s ease, transform 0.15s ease,
+    box-shadow 0.18s ease;
+}
+
+.quote-actions .primary-btn:hover,
+.quote-actions .primary-btn:focus-visible {
+  background-color: var(--accent-color-strong, #0193a5);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+.quote-small {
+  font-size: 0.82rem;
+  color: #4a5568;
+}
+
+/* SIDE ASIDE PANEL */
+
+.quote-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.quote-aside-card {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.4rem 1.25rem 1.5rem;
+  box-shadow: 0 14px 40px rgba(11, 35, 64, 0.06);
+}
+
+.quote-aside-card p:first-child {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  color: var(--accent-color, #00b3c7);
+}
+
+.quote-aside-card h3 {
+  margin-block: 0.4rem 0.85rem;
+  font-size: 1.1rem;
+}
+
+.quote-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.quote-steps li {
+  font-size: 0.9rem;
+}
+
+.quote-steps strong {
+  display: block;
+  margin-bottom: 0.1rem;
+}
+
+.quote-steps span {
+  display: block;
+  color: #4a5568;
+}
+
+.quote-coverage-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.45rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.6rem;
+  font-size: 0.9rem;
+}
+
+.quote-coverage-list li {
+  background-color: #edf2f7;
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+}
+
+/* ================================
+   QUOTE FAQ + FINAL CTA tweaks
+   ================================ */
+
+.quote-faqs {
+  padding-top: 3.5rem;
+}
+
+/* ================================
+   RESPONSIVE
+   ================================ */
+@media (max-width: 960px) {
+  .quote-form-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .quote-aside {
+    flex-direction: column;
+  }
+
+  .commercial-hero.quote {
+    padding-block: 4.5rem 4rem;
+  }
+
+  .commercial-hero.quote .commercial-hero-text {
+    text-align: centre;
+  }
+
+  .commercial-hero.quote p {
+    margin-inline: auto;
+  }
+
+  .commercial-hero.quote .cta-commercial {
+    justify-content: centre;
+  }
+}
+
+@media (max-width: 640px) {
+  .quote-section {
+    padding-inline: 1rem;
+  }
+
+  .quote-form {
+    padding-inline: 1.2rem;
+  }
+
+  .quote-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 @media (min-width: 1060px) {
     .nav-links {
@@ -2949,7 +3388,7 @@ img[alt="icon"] {
    }
 
    .cta-header a, .eco-cta a {
-    padding: 1rem;
+    padding: .5rem;
    }
 
    .eco-cta ul, .cleaning-cta ul, .why-choose-cta ul {
@@ -2961,6 +3400,12 @@ img[alt="icon"] {
    }
 
    .hero-content h1 {
-    font-size: 2.7rem;
+    font-size: 2rem;
+   }
+
+   .experience-cta .cta-hero {
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
    }
 }
