@@ -1520,6 +1520,7 @@ footer a .cat-logo
 
 .com-cta2 a {
   color: var(--bg-color);
+  border: 1px solid var(--bg-color);
   transition: all 0.3s ease-in-out;
 }
 
@@ -2434,6 +2435,7 @@ form .submit button {
   background-color: var(--primary-color);
   color: var(--bg-color);
   border-radius: var(--border-radius);
+  width: 100%;
 }
 
 form .submit button:is(:hover, :focus-visible) {
@@ -2506,6 +2508,21 @@ form .submit button:is(:hover, :focus-visible) {
 /********************************/
 /* about us page starts here */
 /********************************/
+.commercial-hero.about {
+  background-image: url(/images/about-us-hero.png);
+  background-size: cover;
+}
+.commercial-hero.about::before {
+  background: linear-gradient(
+    
+    rgba(6, 33, 64, 0.7)
+  );
+}
+.commercial-hero .commercial-hero-cta .cta-commercial .com-cta2 a:hover {
+  background: var(--bg-color);
+  color: var(--primary-color);
+  border: 1px solid var(--bg-color);
+}
 
 .eco-friendly.about {
   margin-block: 4rem;
@@ -3289,6 +3306,11 @@ img[alt="icon"] {
 }
 
 @media (min-width: 920px) {
+  .commercial-hero-text {
+    max-width: 80%;
+    margin: auto;
+  }
+  
   .eco-content h2,
   .why-trust-content h2,
   .workspace-heading {
