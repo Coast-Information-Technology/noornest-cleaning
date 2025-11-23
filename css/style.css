@@ -1462,7 +1462,6 @@ footer a:is(:hover, :focus-visible) {
   align-items: center;
   text-align: center;
   justify-content: center;
-  max-width: 80%;
   margin: auto;
   height: 100vh;
 }
