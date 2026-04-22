@@ -85,6 +85,7 @@ svg {
   z-index: 100;
   transition: top 0.3s;
 }
+
 .skip-link:focus {
   top: 10px;
 }
@@ -138,11 +139,13 @@ header {
   position: relative;
   transition: 0.4s;
 }
+
 .dropdown-link {
   display: flex;
   align-items: center;
   gap: 0.15rem;
 }
+
 .dropdown-link i {
   font-size: 13px;
 }
@@ -166,9 +169,10 @@ header {
   gap: 0.5rem;
   align-items: center;
 }
+
 .cta-header .cta3 {
-    display: none;
-  }
+  display: none;
+}
 
 .nav-links a {
   font-size: var(--text-font-size);
@@ -238,14 +242,12 @@ header {
 /* hero section starts here */
 .hero {
   margin-block-start: 7rem;
-  background-image: linear-gradient(
-    to bottom,
-    rgb(0, 71, 171),
-    rgba(0, 71, 171, 0.747),
-    rgba(0, 71, 171, 0.425),
-    rgba(0, 71, 171, 0.349),
-    rgba(0, 71, 171, 0.123)
-  );
+  background-image: linear-gradient(to bottom,
+      rgb(0, 71, 171),
+      rgba(0, 71, 171, 0.747),
+      rgba(0, 71, 171, 0.425),
+      rgba(0, 71, 171, 0.349),
+      rgba(0, 71, 171, 0.123));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -298,6 +300,7 @@ header {
   border: 2px solid var(--primary-color);
   transition: all 0.3s ease-in-out;
 }
+
 .hero-cta1 a:hover {
   background-color: var(--primary-color);
   color: var(--bg-color);
@@ -320,6 +323,7 @@ header {
   width: 100vw;
   height: 100%;
 }
+
 #heroVideo {
   object-fit: cover;
 }
@@ -379,6 +383,7 @@ header {
   padding: 1rem 2rem;
   border-radius: var(--border-radius);
 }
+
 .eco-cta2 i {
   font-size: 0.8rem;
   margin-left: 5px;
@@ -438,6 +443,7 @@ header {
   margin: auto;
   padding-block: 1rem;
 }
+
 .trust-card i {
   display: block;
   font-size: 2.4rem;
@@ -506,6 +512,7 @@ header {
   max-width: 90%;
   margin: auto;
 }
+
 .cleaning-heading h2 {
   text-transform: capitalize;
 }
@@ -573,10 +580,12 @@ header {
   max-width: 60%;
   margin: auto;
 }
+
 .why-choose-card {
   max-width: 80%;
   margin: auto;
 }
+
 .why-choose-us,
 .cleaning-process,
 .locations,
@@ -808,7 +817,8 @@ header {
 
 /* --- Flickity Carousel Container --- */
 .client-reviews {
-  padding: 3rem 1rem 5rem; /* extra bottom padding for controls */
+  padding: 3rem 1rem 5rem;
+  /* extra bottom padding for controls */
   border-radius: 20px;
   position: relative;
   overflow: hidden;
@@ -821,7 +831,8 @@ header {
   padding: 1.5rem;
   color: #fff;
   background: rgba(255, 255, 255, 0.05);
-  width: 90%; /* two visible cards on large screens */
+  width: 90%;
+  /* two visible cards on large screens */
   margin-right: 20px;
   display: flex;
   flex-direction: column;
@@ -943,8 +954,7 @@ footer a:is(:hover, :focus-visible) {
   margin: auto;
 }
 
-footer a .cat-logo 
-{
+footer a .cat-logo {
   padding: 1.5rem;
   background-color: var(--bg-color);
   margin-block-start: .6rem;
@@ -982,6 +992,30 @@ footer a .cat-logo
   border-bottom: 1px solid var(--bg-color);
 }
 
+.footer-insured {
+  width: 100%;
+}
+
+.insured-logos {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  object-fit: contain;
+}
+
+.insured-logos a {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.insured-logos img {
+  width: auto;
+  height: 8rem;
+  margin: 0;
+  border-radius: 10px;
+}
+
 .socials {
   display: flex;
   gap: 1rem;
@@ -991,7 +1025,7 @@ footer a .cat-logo
 }
 
 .socials a {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .youtube a:is(:hover, :focus-visible) {
@@ -1038,13 +1072,11 @@ footer a .cat-logo
 
 .hero-service::before {
   inset: 0;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.3)
-  );
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.3));
   content: "";
   position: absolute;
   z-index: 2;
@@ -1062,6 +1094,7 @@ footer a .cat-logo
   padding-block-start: 8rem;
   z-index: 3;
 }
+
 .hero-service-header p {
   max-width: 700px;
   line-height: 1.6;
@@ -1175,12 +1208,13 @@ footer a .cat-logo
   margin-bottom: 0.75rem;
 }
 
-.service-overview-inner > p {
+.service-overview-inner>p {
   max-width: 720px;
   margin: 0 auto 2.25rem;
   text-align: center;
   line-height: 1.7;
-  color: #4a5568; /* muted text */
+  color: #4a5568;
+  /* muted text */
 }
 
 /* Grid layout for the columns */
@@ -1237,7 +1271,7 @@ footer a .cat-logo
   color: #4b5563;
 }
 
-.service-overview-column li + li {
+.service-overview-column li+li {
   margin-top: 0.3rem;
 }
 
@@ -1264,24 +1298,21 @@ footer a .cat-logo
   .service-overview-column:hover {
     transform: translateY(-3px);
     box-shadow: 0 14px 35px rgba(15, 23, 42, 0.12);
-    border-color: rgba(
-      56,
-      189,
-      248,
-      0.5
-    ); /* subtle highlight; adjust to brand colour */
+    border-color: rgba(56,
+        189,
+        248,
+        0.5);
+    /* subtle highlight; adjust to brand colour */
   }
 }
 
 /* cleaning solution precision starts here */
 .why-choose-us.precision {
-  background-image: linear-gradient(
-    to bottom,
-    rgb(0, 71, 171),
-    rgba(0, 71, 171, 0.9),
-    rgba(0, 71, 171, 0.7),
-    rgba(0, 71, 171, 0.6)
-  );
+  background-image: linear-gradient(to bottom,
+      rgb(0, 71, 171),
+      rgba(0, 71, 171, 0.9),
+      rgba(0, 71, 171, 0.7),
+      rgba(0, 71, 171, 0.6));
 }
 
 .why-choose-us.precision h2,
@@ -1459,14 +1490,12 @@ footer a .cat-logo
 
 .commercial-hero::before {
   inset: 0;
-  background-image: linear-gradient(
-    to bottom,
-    rgb(0, 71, 171),
-    rgba(0, 71, 171, 0.74),
-    rgba(0, 71, 171, 0.363),
-    rgba(0, 71, 171, 0.226),
-    rgba(0, 71, 171, 0.096)
-  );
+  background-image: linear-gradient(to bottom,
+      rgb(0, 71, 171),
+      rgba(0, 71, 171, 0.74),
+      rgba(0, 71, 171, 0.363),
+      rgba(0, 71, 171, 0.226),
+      rgba(0, 71, 171, 0.096));
   content: "";
   position: absolute;
 }
@@ -1493,10 +1522,12 @@ footer a .cat-logo
 .commercial-hero-text h1 span {
   color: var(--primary-color);
 }
+
 .commercial-hero-text p {
   line-height: 1.6;
   text-align: center;
 }
+
 .commercial-hero-text .cta-menu {
   margin-block-start: 1.5rem;
 }
@@ -1757,6 +1788,7 @@ footer a .cat-logo
 .cleaning-process.journey {
   background-color: var(--third-tint);
 }
+
 /* cleaning costs starts here */
 .cost-card {
   background-color: var(--third-tint);
@@ -1791,10 +1823,12 @@ footer a .cat-logo
   border-radius: var(--border-radius);
   padding: 0.5rem 1.5rem;
 }
+
 /* service areas starts here */
 .mini-cta.areas {
   padding-block-start: 1rem;
 }
+
 /* faqs starts here */
 .faqs.commercial {
   background-color: var(--third-tint);
@@ -1886,6 +1920,7 @@ footer a .cat-logo
   background: var(--bg-color);
   transition: all 0.3s ease-in-out;
 }
+
 /* kitchen services starts here */
 .kitchen,
 .bathroom,
@@ -1945,6 +1980,7 @@ footer a .cat-logo
 .perfect-clean .workspace-card span {
   color: var(--primary-color);
 }
+
 /********************************/
 /* industrial page starts here */
 /********************************/
@@ -1975,6 +2011,7 @@ footer a .cat-logo
 .trust-side-header.primary {
   background-color: var(--primary-color);
 }
+
 /* cleaning-limitations starts here */
 .cleaning-limitations,
 .cleaning-protocols {
@@ -2520,12 +2557,11 @@ form .submit button:is(:hover, :focus-visible) {
   background-image: url(/images/about-us-hero.png);
   background-size: cover;
 }
+
 .commercial-hero.about::before {
-  background: linear-gradient(
-    
-    rgba(6, 33, 64, 0.7)
-  );
+  background: linear-gradient(rgba(6, 33, 64, 0.7));
 }
+
 .commercial-hero .commercial-hero-cta .cta-commercial .com-cta2 a:hover {
   background: var(--bg-color);
   color: var(--primary-color);
@@ -2718,12 +2754,10 @@ img[alt="icon"] {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(6, 33, 64, 0.9),
-    rgba(6, 33, 64, 0.65),
-    rgba(6, 33, 64, 0.5)
-  );
+  background: linear-gradient(to right,
+      rgba(6, 33, 64, 0.9),
+      rgba(6, 33, 64, 0.65),
+      rgba(6, 33, 64, 0.5));
 }
 
 .commercial-hero.quote .commercial-hero-text {
@@ -3178,6 +3212,7 @@ img[alt="icon"] {
 
 /* media query starts here */
 @media (min-width: 768px) {
+
   .footer-content,
   .why-trust-content,
   .why-choose-cards,
@@ -3312,6 +3347,7 @@ img[alt="icon"] {
   .hero-content {
     padding-inline: 2rem;
   }
+
   .hero-content p {
     padding-inline: 3rem;
   }
@@ -3322,7 +3358,7 @@ img[alt="icon"] {
     max-width: 80%;
     margin: auto;
   }
-  
+
   .eco-content h2,
   .why-trust-content h2,
   .workspace-heading {
@@ -3441,12 +3477,15 @@ img[alt="icon"] {
   header {
     padding: 0.5rem 1rem;
   }
+
   /* .logo img {
   width: 5rem;
 } */
-  .cta-header .cta1, .cta-header .cta2 {
+  .cta-header .cta1,
+  .cta-header .cta2 {
     display: none;
   }
+
   .cta-header .cta3 {
     display: inline;
   }
@@ -3470,22 +3509,22 @@ img[alt="icon"] {
     font-size: 2rem;
   }
 
-  .experience-cta .cta-hero, .trust-cta ul {
+  .experience-cta .cta-hero,
+  .trust-cta ul {
     flex-direction: column;
     gap: 2.5rem;
     align-items: center;
   }
 
-  .commercial-hero-text h1
- {
+  .commercial-hero-text h1 {
     font-size: 2rem;
     font-weight: var(--h1font-weight);
     text-align: center;
- }
+  }
 
   .commercial-hero-cta ul {
     flex-direction: column;
     gap: 2.5rem;
     align-items: center;
-}
+  }
 }
